@@ -12,7 +12,11 @@ color:white;
 
 html { 
 
-background: url(../img/citybackground.jpg) no-repeat center center fixed; 
+background:   
+linear-gradient(
+       rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)), 
+url(../img/citybackground.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,8 +24,11 @@ background: url(../img/citybackground.jpg) no-repeat center center fixed;
 
 }
 
+/*  linear-gradient(
+       rgba(255, 255, 255, 0.4), 
+      rgba(255, 255, 255, 0.4)), */
 
-background-image {
+/* background-image {
   position: absolute;
   align-content: center;
   z-index: -1;
@@ -38,7 +45,7 @@ background-image {
   filter: blur(1px);
 }
 
-
+*/
 
 #header {
 padding: 50px 5px 5px;
@@ -119,19 +126,27 @@ font-weight: lighter;
 }
 
 #description{
-	float:right;
-	width:55%;
 
+	width:60%;
+text-align: justify;
 	
 }
 
+#intro{
+	text-align: center;
+}
+
 #thumbnail {
-height: 250px;
-width:250px;
-margin-top:-20px;
+border-radius: 50%;
 -webkit-filter: grayscale(100%);
 filter: grayscale(100%);
 transition: all 0.2s ease;
+margin-top: -30px;
+}
+
+.image{
+	border-radius: 50%;
+	border:5px solid white ;
 }
 
 #thumbnail:hover{
@@ -160,7 +175,7 @@ transition-delay: .25s;
 	border-radius: 50%;
 	width: 250px;
 	height: 250px; 
-	background:#80D8FF;
+	background:#039BE5;
 	text-align: center;
 }
 
@@ -180,11 +195,12 @@ transition-delay: .25s;
 .bio-descrip{
 	width:100%;
 	margin-top:-120px;
+	text-align:center;
 }
 .resume a{
 	display:block;
 	color:white;
-		background: #FF5722;
+	background: #FF5722;
 	padding:15px;
 	font-size:125%;
 	letter-spacing: 3px;
@@ -250,7 +266,7 @@ border-radius:50%;
 font-size:50px;
 line-height:250px;
 text-align:center;
-background:#80D8FF;
+background:#039BE5;
 	margin-top:10px;
 
 }
@@ -413,7 +429,7 @@ height:250px;
 border-radius:50%;
 line-height:250px;
 text-align:center;
-background:#80D8FF;
+background: #039BE5;
 }
 
 .list-content {
@@ -462,7 +478,7 @@ background:#EF6C00;
 .media{
 	
 	margin-top: 200px;
-	background:#607D8B;
+	background:#78909C;
 	display:flex;
 	width:100%;
 	height:65px;
@@ -480,7 +496,7 @@ font-family: 'Roboto Slab', serif;
 .author{
 
 	font-size:50%;
-	background:#607D8B;
+	background:#78909C;
 	position:bottom left;
 	margin-top:-20px;
 	text-align: left;
