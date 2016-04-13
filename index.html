@@ -10,14 +10,15 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 	<link href="assets/css/hover.css" rel="stylesheet" media="all">
+	
 </head>
 <body>
 <a name="home"> </a>
 	<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#bio">Bio</a></li>
-  <li><a href="#works">Works</a></li>
-  <li><a href="#hobbies">Hobbies</a></li>
+  <li class="active"><a id="link1" class="nav-section1" href="#home">Home</a></li>
+  <li><a id="link2" class ="nav-section2" href="#bio">Bio</a></li>
+  <li><a id="link3" class="nav-section3" href="#works">Works</a></li>
+  <li><a id="link4" class="nav-section4" href="#hobbies">Hobbies</a></li>
 </ul>
 	<div id="header">Alok Narahari</div>
 <hr class="style-four">
@@ -35,8 +36,9 @@
 
 
 
-<div class="big-box">
-<a name="bio"> </a>
+
+<h1 id="bio"> </h1>
+<div class= "bio-box">
 <div class="bio-container">
 		<div class="bio hvr-hollow"> BIO </div>
 	<div class="bio-and-resume">	
@@ -45,9 +47,10 @@
 		<div class="resume hvr-outline-in"><a href="assets/img/Alok_Narahari_Resume.pdf" target="_blank">RESUME</a></div>
 	</div>	
 </div>
-
+</div>
 
 <a name="works"> </a>
+<div class="works-box">
 <div class="works-container">
 	<div class="works-title hvr-hollow"> WORKS </div>
 	<div class="works">
@@ -69,9 +72,12 @@
 	</div>
 </div>	
 </div>
+</div>
+
 
 
 	<a name="hobbies"> </a>
+	<div class="hobbies-box">
 <div class="list-container">
 	<div class="list-title hvr-hollow"> HOBBIES</div>
 	<div class="list-content">
@@ -84,18 +90,22 @@
 
 			</div>
 		</div>
-	
+	</div>
 		
 
 <div class="media"> 
 			<div class="contact-label" >Contact Me: </div>
-			<div class="icon" id="linkedin"><a href="https://www.linkedin.com/in/alok-narahari-22632b94"> <img src="assets/img/linkedin.png"> </a></div>
-			<div class="icon" id="facebook"><a href="https://www.facebook.com/alok.narahari"> <img src="assets/img/fb.png"> </a></div>
+			<div class="icon" id="linkedin"><a href="https://www.linkedin.com/in/alok-narahari-22632b94" target="_blank"> <img src="assets/img/linkedin.png"> </a></div>
+			<div class="icon" id="facebook"><a href="https://www.facebook.com/alok.narahari" target="_blank"> <img src="assets/img/fb.png"> </a></div>
 			<div class="icon" id="mail"><a href="mailto:alok12@berkeley.edu"> 
 			<img src="assets/img/mail-icon.png"></a></div>
 		</div>
 		<div class="author"> Created By Alok Narahari </div>
-</div>
+
 
 </body>
+
+<script  src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script  src="assets/js/script.js"></script>
+
 </html>
