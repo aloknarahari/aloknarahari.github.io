@@ -1,24 +1,25 @@
 $(document).ready(function() {
 
 
-function scrollNav() {
-  $('.nav a').click(function(){  
-    //Toggle Class
-    $(".active").removeClass("active");      
-    $(this).closest('li').addClass("active");
-    var theClass = $(this).attr("class");
-    $('.'+theClass).parent('li').addClass('active');
-    //Animate
-    $('html, body').stop().animate({
-        scrollTop: $( $(this).attr('href') ).offset().top - 160
-    }, 400);
-    return false;
+$("#sidebar-button").click(function(){
+    if ($(".navigation").hasClass("sidebar-active")) {
+          $(".navigation").removeClass("sidebar-active");
+        } else {
+          $(".navigation").addClass("sidebar-active");
+          $(".navigation").fadeIn(2000);
+          
+    
+        }
   });
-  $('.scrollTop a').scrollTop();
-}
-scrollNav();
 
 
+$(".anchor").click(function(){
+$('html, body').animate({
+scrollTop: $( $.attr(this, 'href')).offset().top
+}, 1000);
+  return false;
+
+});
 
 
 

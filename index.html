@@ -4,53 +4,64 @@
 <head>
 
 
-<div class="background-image"></div>
 	<title>Alok Narahari</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:600,700,800' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 	<link href="assets/css/hover.css" rel="stylesheet" media="all">
-	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/parallax.js-1.4.2/parallax.js"></script>
 </head>
+
 <body>
+
+
 <a name="home"> </a>
-	<ul>
-  <li class="active"><a id="link1" class="nav-section1" href="#home">Home</a></li>
-  <li><a id="link2" class ="nav-section2" href="#bio">Bio</a></li>
-  <li><a id="link3" class="nav-section3" href="#works">Works</a></li>
-  <li><a id="link4" class="nav-section4" href="#hobbies">Hobbies</a></li>
+	<ul class="navigation">
+  <li><a href="#home-section" class="anchor">Home</a></li>
+  <li><a href="#bio-section" class="anchor">Bio</a></li>
+  <li><a href="#works-section"class="anchor">Works</a></li>
+  <li><a href="#hobbies-section"class="anchor">Hobbies</a></li>
+
 </ul>
-	<div id="header">Alok Narahari</div>
+
+	  <div id = "sidebar-button">
+            <a id="nav-toggle">
+                <span></span>
+            </a>
+        </div>
+
+
+<section class="section" id="home-section" >		
+<div id="header">Alok Narahari</div>
 <hr class="style-four">
 
-
-<div>		
 	<div class="top-container">
 		<div id="thumbnail"><img src=assets/img/profpicsquare.png class="image"></div>
 		<div id="description">
 			<div id="intro"> <p>My name's Alok (pronounced uh-LOAK) and I'm an <b>Economics Major</b> at UC Berkeley. My passion lies in learning about the idiosyncratic and stochastic world we live in through data, literature, and experience. I strive to harness this dynamic knowledge and make a tangible impact in whatever industry I enter.</p> </div>
 		
+		</div>
 	</div>
-</div>
-</div>
+</section>
 
 
 
 
-<h1 id="bio"> </h1>
-<div class= "bio-box">
+<section class="section" id="bio-section">
 <div class="bio-container">
 		<div class="bio hvr-hollow"> BIO </div>
 	<div class="bio-and-resume">	
-		<div class="bio-descrip"> <p>As a third year student, I am excited to graduate in December and apply the quantitative and qualitative skills I gained in college.</p><p> I find economics particularly interesting as it allows me to use math and statistics to address and comprehend a litany of issues. Supplementarily, in the past few years I've developed a passion for analyzing data and trying to identify the <a href="http://www.amazon.com/The-Signal-Noise-Predictions-Fail-but/dp/0143125087" class="nsilver" target="_blank">signal from the noise</a>.<p>I currently work as a news reporter for the <a href="http://www.dailycal.org" target="_blank">Daily Californian</a> where I have experienced the hectic yet rewarding world of journalism. I also co-founded a branch of <a href="http://www.180dc.org" target="_blank">180 Degrees Consulting</a>, an international pro-bono consultancy, here at Berkeley to help out the plethora of nonprofit organizations in the Bay.</p> 
+		<div class="bio-descrip"> <p>As a third year student, I am excited to graduate in December and apply the quantitative and qualitative skills I acquired in college.</p><p> I find economics particularly interesting as it allows me to use math and statistics to address and comprehend a litany of issues. Supplementarily, in the past few years I've developed a passion for analyzing data and trying to identify the <a href="http://www.amazon.com/The-Signal-Noise-Predictions-Fail-but/dp/0143125087" class="nsilver" target="_blank">signal from the noise</a>.<p>I currently work as a news reporter for the <a href="http://www.dailycal.org" target="_blank">Daily Californian</a> where I have experienced the hectic yet rewarding world of journalism. I also co-founded a branch of <a href="http://www.180dc.org" target="_blank">180 Degrees Consulting</a>, an international pro-bono consultancy, here at Berkeley to help out the plethora of nonprofit organizations in the Bay.</p> 
 		<p>In the past, I've worked at a variety of organizations including a <a href="https://formswift.com/" target="_blank">startup</a>, a<a href="http://www.ci.berkeley.ca.us/home.aspx" target="_blank"> city council</a>, and a<a href="https://www.calchamber.com/Pages/default.aspx" target="_blank"> chamber of commerce</a>. Although diverse, they are all linked by my underlying desire to impact policy in a notable way.  </p> </div>
 		<div class="resume hvr-outline-in"><a href="assets/img/Alok_Narahari_Resume.pdf" target="_blank">RESUME</a></div>
 	</div>	
 </div>
-</div>
+</section>
 
-<a name="works"> </a>
-<div class="works-box">
+
+<section class="section" id="works-section">
 <div class="works-container">
 	<div class="works-title hvr-hollow"> WORKS </div>
 	<div class="works">
@@ -60,9 +71,9 @@
 		<div class="favorites dropdown">
 			<button class="dropbtn .hvr-shrink"> My Favorites </button>
 			<div class="dropdown-content">
-				<a href="http://www.dailycal.org/2015/09/15/northern-california-fires-spark-concern-among-berkeley-residents-emergency-responders/" target="_blank"> Wildfires </a>
-				<a href="http://www.dailycal.org/2015/10/15/israeli-palestinian-dispute-over-bds-breaks-out-on-sproul-plaza-2/" target="_blank"> Protests </a>
+			<a href="http://www.dailycal.org/2015/10/15/israeli-palestinian-dispute-over-bds-breaks-out-on-sproul-plaza-2/" target="_blank"> Protests </a>
 				<a href="http://www.dailycal.org/2016/03/04/students-rally-possible-dissolution-campus-college-chemistry-friday/" target="_blank"> Rallies </a>
+				<a href="http://www.dailycal.org/2015/09/15/northern-california-fires-spark-concern-among-berkeley-residents-emergency-responders/" target="_blank"> Wildfires </a>
 			</div>
   		</div>	
 	</div>
@@ -72,40 +83,37 @@
 	</div>
 </div>	
 </div>
-</div>
+</section>
 
 
 
-	<a name="hobbies"> </a>
-	<div class="hobbies-box">
-<div class="list-container">
-	<div class="list-title hvr-hollow"> HOBBIES</div>
-	<div class="list-content">
-				<div class="list-item hvr-pulse"><a href="http://espn.go.com/boston/" target="_blank"> Sports (Fan &#38; Player)</a></div>
-				<div class="list-item hvr-pulse"><a href="http://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555" target="_blank">Reading</a></div>
-				<div class="list-item hvr-pulse"><a href="https://github.com/caesar0301/awesome-public-datasets" target="_blank">Data</a></div>
-				<div class="list-item hvr-pulse">Hiking</div>
-				<div class="list-item hvr-pulse"><a href="http://fivethirtyeight.com/" target="_blank"> Journalism</a></div>
-				<div class="list-item hvr-pulse"><a href="http://www.espetus.com/" target="_blank">Gourmet Food</a></div>
+	<section class="section" id="hobbies-section">
 
-			</div>
-		</div>
+<div class="hobbies-container">
+	<div class="hobbies-title hvr-hollow"> HOBBIES</div>
+	<div class="hobbies-content">
+				<div class="list-item"><a href="http://espn.go.com/boston/" target="_blank" class = "hvr-pulse"><img class = "hobby-pic" id = 'baseball' src = "assets/img/noun_561.svg"></a> Sports</div>
+				<div class="list-item"><a href="http://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555" class=" hvr-pulse" target="_blank"><img class = 'hobby-pic' id='book' src = "assets/img/noun_179979.svg"></a><div class="read">Reading</div></div>
+				<div class="list-item"><a href="https://github.com/caesar0301/awesome-public-datasets" class=" hvr-pulse" target="_blank"><img class = 'hobby-pic' id='data' src = "assets/img/noun_70892.svg"></a>Data</div>
+				<div class="list-item"><a href="http://espn.go.com/" class="hvr-pulse" target="_blank"><img class = 'hobby-pic' id='websites' src = "assets/img/noun_38321.svg"></a>Web Design</div>
+				<div class="list-item"><a href="http://fivethirtyeight.com/" target="_blank" class="hvr-pulse"> <img class = 'hobby-pic' id='journalism' src = "assets/img/noun_18205.svg"></a>Journalism</div>
+				<div class="list-item"><a href="http://www.espetus.com/" target="_blank" class=" hvr-pulse"><img class = 'hobby-pic' id='food' src = "assets/img/noun_195363.svg"></a>Gourmet Food</div>
 	</div>
-		
+	</div>
+</section>		
 
-<div class="media"> 
+<div class = 'footer' id="media"> 
 			<div class="contact-label" >Contact Me: </div>
-			<div class="icon" id="linkedin"><a href="https://www.linkedin.com/in/alok-narahari-22632b94" target="_blank"> <img src="assets/img/linkedin.png"> </a></div>
-			<div class="icon" id="facebook"><a href="https://www.facebook.com/alok.narahari" target="_blank"> <img src="assets/img/fb.png"> </a></div>
+			<div class="icon" id="linkedin"><a href="https://www.linkedin.com/in/alok-narahari-22632b94" target="_blank"> <img src="assets/img/social-1_logo-linkedin.svg"> </a></div>
+			<div class="icon" id="facebook"><a href="https://www.facebook.com/alok.narahari" target="_blank"> <img src="assets/img/social-1_logo-facebook.svg"> </a></div>
 			<div class="icon" id="mail"><a href="mailto:alok12@berkeley.edu"> 
-			<img src="assets/img/mail-icon.png"></a></div>
+			<img src="assets/img/back.svg"></a></div>
 		</div>
-		<div class="author"> Created By Alok Narahari </div>
+		<div class="footer" id ='author'> Created By Alok Narahari </div>
 
 
 </body>
 
-<script  src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script  src="assets/js/script.js"></script>
+
 
 </html>
