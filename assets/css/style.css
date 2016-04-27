@@ -11,6 +11,7 @@ color:white;
 }
 
 
+
 html {
 background:   
 linear-gradient(
@@ -47,46 +48,6 @@ url(../img/hand.jpeg) no-repeat center 0px;
       rgba(255, 255, 255, 0.4)), */
 
 
-#nav-toggle { 
-	position: absolute; 
-	left: 50%; top: 50%; 
-}
-
-#nav-toggle {
-	padding: 10px 30px 15px 10px; 
-}
-
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-	height: 3px;
-	width: 30px;
-	background: #fff;
-	position: absolute;
-	display: block;
-	content: '';
-}
-
-#nav-toggle span:before {
-	top: -10px; 
-}
-
-#nav-toggle span:after {
-	bottom: -10px;
-}
-
-
-
-#sidebar-button {
-	position: fixed;
-	z-index: 100;
-	left: 15px;
-	top: 15px;
-	cursor: pointer;
-	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	-o-transition: all .3s;
-	transition: all .3s;
-	background:white;
-} 
 
 #header {
 padding: 60px 5px 5px;
@@ -108,6 +69,26 @@ hr.style-four {
 
 
 }
+
+.button {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    width: 30px;
+    background: transparent;
+    border: 0 none;
+    outline: 0 none;
+    cursor: pointer;
+    position:fixed;
+    z-index: 200;
+    margin-left:20px;
+    margin-top:5px;
+}
+.button svg rect{
+	fill:#fff;
+	
+}
+
 
 ul {
     list-style-type: none;
