@@ -21,6 +21,8 @@ url(../img/galaxy1.jpeg) no-repeat center center fixed;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; 
+   max-width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -51,7 +53,7 @@ url(../img/hand.jpeg) no-repeat center 0px;
 }
 
 #nav-toggle {
-	padding: 10px 30px 15px 0px; 
+	padding: 10px 30px 15px 10px; 
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
@@ -114,7 +116,7 @@ ul {
     display:flex;
     background-color: #333;
     justify-content: center;
-    opacity:0.8;
+    opacity:0.6;
     position:fixed;
     width:100%;
     z-index: 100;
@@ -231,7 +233,7 @@ transition-delay: .25s;
 
 #bio-section{
 
-	height:600px;
+	height:625px;
 	background:url(../img/soft.png);
 }
 
@@ -299,18 +301,30 @@ height:500px;
 	width:100%;
 	margin-top:-120px;
 	text-align:left;
+	
 
 }
 
+/*
+.bio-descrip-hidden{
+	height:100px;
+	overflow: hidden;
+}
+
+*/
 
 .resume a{
 	display:block;
-	color:white;
-	background: #FF5722;
 	padding:15px;
 	font-size:125%;
-	letter-spacing: 3px;
+	letter-spacing:2px;
+	background:transparent;
+	color:#2196F3;
+	border:3px solid #2196F3;
+	transition: all 0.3s;
 }
+
+
 
 .resume{
 	margin-left:200px;
@@ -320,8 +334,10 @@ height:500px;
 	height:57px;
 }
 
-.resume:hover{
-	
+.resume a:hover{
+	letter-spacing:4px;
+	transition: all 0.3s;
+
 }
 
 
@@ -401,11 +417,16 @@ margin-top:-30px;
 .all a{
 	display:block;
 	color:white;
-		background: #2196F3;
+		background: rgba(255,255,255,0.1);
+		border: 3px solid white;
+		
 	padding:14px;
+	padding-left:52px;
+	padding-right:52px;
 }
 
 .all{
+
 
 }
 .hvr-bubble-float-bottom {
@@ -430,6 +451,7 @@ margin-top:-30px;
 width:40%;
 margin-bottom:20px;
 
+
 }
 .hvr-hollow {
   display: inline-block;
@@ -452,12 +474,14 @@ margin-bottom:20px;
 }
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color:rgba(255,255,255,0.1);
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    margin-left:20px;
+    border:3px solid white;
 }
 
 .dropdown {
@@ -490,7 +514,7 @@ margin-bottom:20px;
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: transparent;
 }
 .research{
 	margin-top:20px;
@@ -502,10 +526,11 @@ margin-bottom:20px;
 .papers{
 
 	color:white;
-		background: #FFA000;
+		background: rgba(255,255,255,0.1);
 	padding:14px 0px 14px 0px;
 	width:200px;
 	margin:auto;
+	border:3px solid white;
 
 }	
 
@@ -657,3 +682,70 @@ margin-left: 20px;
 	transform:scale(1.1);
 	
 }
+
+.down-arrow{
+	z-index: 999;
+	background:white;
+	width:50px;
+	height:50px;
+
+}
+
+#down-arrow{
+background:transparent;
+
+
+}
+
+
+@media (max-width: 1024px){
+	
+	.hobbies-content{
+		width:500px;
+		height:400px;
+		display:inline-block;
+		padding-top:10px;
+		margin-top:-50px;
+	}
+
+	#bio-section{
+		height:720px;
+	}
+
+	#thumbnail{
+		margin-top:0px;
+	}
+
+	.top-container{
+		width:90%;
+		margin-top:100px;
+		margin-left:100px;
+	}
+	.bio-and.resume{
+		width:80%;
+	}
+}
+
+@media(min-width: 1300px){
+	#bio-section{
+		height:575px;
+	}
+}
+
+@media(min-width: 1400px){
+	#home-section{
+		height:870px;
+	}
+
+	.top-container{
+		margin-top:250px;
+	}
+}
+
+
+
+
+
+
+
+

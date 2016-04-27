@@ -21,6 +21,9 @@ scrollTop: $( $.attr(this, 'href')).offset().top
 
 });
 
+$('.expand').click(function(){
+	$('.bio-descrip').removeClass("bio-descrip-hidden");
+});
 
 
 
