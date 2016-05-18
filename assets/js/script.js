@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 
+
 $(".button").click(function(){
     if ($(".navigation").hasClass("sidebar-active")) {
           $(".navigation").removeClass("sidebar-active");
@@ -66,6 +67,7 @@ $('.expand').click(function(){
   });
 
 })(window, document, jQuery);
+
 
 
 
