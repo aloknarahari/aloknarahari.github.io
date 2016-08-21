@@ -5,14 +5,22 @@
 
 
 	<title>Alok Narahari</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' href='assets/img/favicon.ico' type='image/x-icon'/ >
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:600,700,800' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+	<link rel="stylesheet" href="assets/imagehover.css-master/css/imagehover.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hexagons.css">
 	<link href="assets/css/hover.css" rel="stylesheet" media="all">
 	<link href="assets/css/animate.css" rel="stylesheet" media='all'>
+	<link rel="stylesheet" type="text/css" href="assets/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+	<script src="assets/js/modernizr.custom.js"></script>
 	<link rel="stylesheet" href="assets/js/vegas/vegas.min.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="assets/js/script.js"></script>
 	<script src="assets/js/velocity.min.js"></script>
 	<script src="assets/js/parallax.js-1.4.2/parallax.js"></script>
@@ -24,14 +32,23 @@
 
 <a name="home"> </a>
 	<ul class="navigation">
-  <li><a href="#home-section" class="anchor">Home</a></li>
-  <li><a href="#bio-section" class="anchor">Bio</a></li>
-  <li><a href="#works-section"class="anchor">Works</a></li>
-  <li><a href="#hobbies-section"class="anchor">Hobbies</a></li>
+  <li class="nav-box"><a href="#home-section" class="anchor">Home</a></li>
+  <li class="nav-box"><a href="#bio-section" class="anchor">Bio</a></li>
+  <li class="nav-box"><a href="#works-section" class="anchor">Works</a></li>
+  <li class="nav-box"><a href="#hobbies-section" class="anchor">Interests</a></li>
 
 </ul>
 
 
+
+<div class = "button js-toggle hamburg animated rollIn" id="nav-icon3">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!--
 <button class="js-toggle button">
   <svg class="hamburg animated rollIn" height="60" version="1.1" width="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
     <g>
@@ -42,7 +59,7 @@
   </svg>
 </button>
 
-
+-->
 
 <section class="section" id="home-section" >
 
@@ -55,7 +72,7 @@
 	<div class="top-container">
 		<div id="thumbnail"><img src=assets/img/profpicsquare.png class="image animated fadeInUp"></div>
 		<div class = 'entrance' id="description">
-			<div id="intro" class="animated flipInX"> <p>My name's Alok (pronounced uh-LOAK) and I'm an <b>Economics Major</b> at UC Berkeley. My passion lies in learning about the idiosyncratic and often random world we live in through data, literature, and experience. I strive to harness this dynamic knowledge and make a tangible impact in whatever industry I enter.</p></div>
+			<div id="intro" class="animated flipInX"> <p>My name's Alok (pronounced uh-LOAK) and I'm an <b>Economics Major</b> at UC Berkeley. My passion lies in learning about the idiosyncratic and often random world we live in through data, literature, and experience. I strive to harness this dynamic knowledge in order to make a tangible impact.</p></div>
 		</div>
 		
 	</div>
@@ -65,60 +82,170 @@
 
 
 <section class="section" id="bio-section">
-<div class="bio-container">
-		<div class="bio hvr-hollow"> BIO </div>
-	<div class="bio-and-resume">	
+
+		<div class="bio"> &mdash;BIO&mdash; </div>
+		
+		<div class="bio-container">
 		<div class="bio-descrip bio-descrip-hidden"> <p>As a third year student, I am excited to graduate in December and apply the quantitative and qualitative skills I acquired in college.</p><p> I find economics particularly interesting as it allows me to use math and statistics to address and comprehend a litany of issues. Supplementarily, in the past few years I've developed a passion for analyzing data and trying to identify the <a href="http://www.amazon.com/The-Signal-Noise-Predictions-Fail-but/dp/0143125087" class="nsilver" target="_blank">signal from the noise</a>.<p>I currently work as a news reporter for the <a href="http://www.dailycal.org" target="_blank">Daily Californian</a> where I have experienced the hectic yet rewarding world of journalism. I also co-founded a branch of <a href="http://www.180dc.org" target="_blank">180 Degrees Consulting</a>, an international pro-bono consultancy, here at Berkeley to help out the plethora of nonprofit organizations in the Bay.</p> 
-		<p>In the past, I've worked at a variety of organizations including a <a href="https://formswift.com/" target="_blank">startup</a>, a<a href="http://www.ci.berkeley.ca.us/home.aspx" target="_blank"> city council</a>, and a<a href="https://www.calchamber.com/Pages/default.aspx" target="_blank"> chamber of commerce</a>. Although diverse, they are all linked by my underlying desire to impact policy in a notable way.  </p> </div>
-		<!--
-		<div class="expand"> expand </div>
-		-->
-		<div class="resume "><a href="assets/img/Alok_Narahari_Resume.pdf" target="_blank">RESUME</a></div>
+		<p>In the past, I've worked at a variety of organizations including a <a href="https://formswift.com/" target="_blank">startup</a>, a<a href="http://www.ci.berkeley.ca.us/home.aspx" target="_blank"> city council</a>, and a<a href="https://www.calchamber.com/Pages/default.aspx" target="_blank"> chamber of commerce</a>. Although diverse, they are all linked by my underlying desire to impact policy in a notable way.  </p> 
+
+
+		<div id = "Resume"> <a href="assets/img/Alok_Narahari_Resume.pdf" target="_blank">Resume</a> </div>
+		</div>
+		
+		
+	
+		
 	</div>	
-</div>
 </section>
 
 
 <section class="section" id="works-section">
-<div class="works-container">
-	<div class="works-title hvr-hollow"> WORKS </div>
-	<div class="works">
-	<div class="dc-articles"> 
-		<h1> Daily Cal Articles </h1>
-		<div class="all hvr-bounce-in"><a href="http://www.dailycal.org/author/anarahari/" target="_blank">All</a></div>
-		<div class="favorites dropdown">
-			<button class="dropbtn .hvr-shrink"> My Favorites </button>
-			<div class="dropdown-content">
-			<a href="http://www.dailycal.org/2015/10/15/israeli-palestinian-dispute-over-bds-breaks-out-on-sproul-plaza-2/" target="_blank"> Protests </a>
-				<a href="http://www.dailycal.org/2016/03/04/students-rally-possible-dissolution-campus-college-chemistry-friday/" target="_blank"> Rallies </a>
-				<a href="http://www.dailycal.org/2015/09/15/northern-california-fires-spark-concern-among-berkeley-residents-emergency-responders/" target="_blank"> Wildfires </a>
-			</div>
-  		</div>	
-	</div>
-		<div class="research"> 
-		<h1>Research</h1>
-		<div class="papers" data-hover="[In Progress]">Econometric Papers</div>
-	</div>
-</div>	
+
+	<div class="works-title"> &mdash;WORKS&mdash; </div>
+
+<div class = "works-background"> 
+<ul class="grid " id = 'papers'>
+	<div class='papers'> Papers </div>
+				<li>
+					<figure class="imghvr-fade">
+						<img src="assets/img/managers.jpeg" >
+						<figcaption>
+							<h2>Asian Managers</h2>
+							<h5>An analysis of the prevalence of Asians in management positions in the U.S</h5>
+							<a href="assets/img/Asian Managers Paper_Narahari.pdf" target = "_blank">Read</a>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure class= "imghvr-fade">
+						<img src="assets/img/crowdfunding.jpg" alt="img01">
+						<figcaption>
+							<h2>Crowdfunding Platforms</h2>
+							<h5>An exploration of different types of crowdfunding platforms</h5>
+							<a href="assets/img/Crowdfunding_Platforms_Narahari.pdf" target = "_blank">Read</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+
+<ul id = "articles" class="grid">
+	<div class='papers'> Articles </div>
+				<li>
+					<figure class = "imghvr-fade">
+						<img src="assets/img/clippings.jpg" alt="img04">
+						<figcaption>
+							<h2>All Articles</h2>
+							<h5>Compilation of all my Daily Cal News Articles.</h5>
+							<a href="http://www.dailycal.org/author/anarahari/" target="_blank">All Here</a>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure class = "imghvr-fade">
+						<img src="assets/img/wildfire.jpeg" alt="img01">
+						<figcaption>
+							<h2>My Favorites</h2>
+							<h5>Curated list of the articles that I found the most captivating whist reporting.</h5>
+						
+							<a id = "fav1" href="http://www.dailycal.org/2015/10/15/israeli-palestinian-dispute-over-bds-breaks-out-on-sproul-plaza-2/" target="_blank">Protests</a>
+							<a id = "fav2" href="http://www.dailycal.org/2015/09/15/northern-california-fires-spark-concern-among-berkeley-residents-emergency-responders/" target="_blank">Wildfires</a>
+							<a id = "fav3" href="http://www.dailycal.org/2016/03/04/students-rally-possible-dissolution-campus-college-chemistry-friday/" target="_blank">Rallies</a>
+
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		<div class='papers' id = "projects"> Projects </div>
+			<div class ="project"> Coming Soon</div>
 </div>
 </section>
 
 
 
 	<section class="section" id="hobbies-section">
+<div class="hobby-title"> &mdash;INTERESTS&mdash; </div>
+		
+		<div class="hex-container">
+			<ul id="hexGrid">
+            <li class="hex">
+                <a class="hexIn" href="http://espn.go.com/boston/" target = '_blank'>
+                    <img src="assets/img/sports.jpg" alt="" />
+                    <h1>Sports</h1>
+                    <p>An ardent fan of Boston Sports, analytics, and recreational games.</p>
+                </a>
+            </li> 
+            <li class="hex">
+                <a class="hexIn" href="http://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555" target = "_blank">
+                    <img src="assets//img/book.jpg" alt="" />
+                    <h1>Reading</h1>
+                    <p> So much quality literature, such little time. </p>
+                </a>
+            </li> 
+            <li class="hex">
+                <a class="hexIn" href="https://github.com/caesar0301/awesome-public-datasets" target = '_blank'>
+                    <img src="assets/img/data.jpg" alt="" />
+                    <h1>Data </h1>
+                    <p> A start to understanding this nuanced world.</p>
+                </a>
+            </li> 
+            <li class="hex">
+              
+             
+                </a>
+            </li> 
+            
+            <li class="hex">
+                <a class="hexIn" href="http://blog.hubspot.com/marketing/best-website-designs-list" target = "_blank">
+                    <img src="assets/img/web-design.jpg" alt="" />
+                    <h1>Web Design</h1>
+                    <p>Always appreciate a well done website.</p>
+                </a>
+            </li> 
+            <li class="hex">
+                <a class="hexIn" href="http://www.espetus.com/" target = "blank">
+                    <img class = "food" src="assets/img/pokepic.jpg" alt="" />
+                    <h1>Gourmet Food</h1>
+                    <p>"People who love to eat are the best people"</p>
+                </a>
+            </li> 
+             
+            <li class="hex">
+                <a class="hexIn" href="http://fivethirtyeight.com/" target = '_blank'>
+                    <img src="assets/img/newspaper.jpg" alt="" />
+                    <h1>Journalism</h1>
+                    <p>Investigative, long-form, and data journalism are my favorites.</p>
+                </a>
+            </li> 
+        </ul>
+       
 
-<div class="hobbies-container">
-	<div class="hobbies-title hvr-hollow"> HOBBIES</div>
-	<div class="hobbies-content">
-				<div class="list-item"><a href="http://espn.go.com/boston/" target="_blank" class = "hvr-pulse"><img class = "hobby-pic" id = 'baseball' src = "assets/img/noun_561.svg"></a> Sports</div>
-				<div class="list-item"><a href="http://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555" class=" hvr-pulse" target="_blank"><img class = 'hobby-pic' id='book' src = "assets/img/noun_179979.svg"></a><div class="read">Reading</div></div>
-				<div class="list-item"><a href="https://github.com/caesar0301/awesome-public-datasets" class=" hvr-pulse" target="_blank"><img class = 'hobby-pic' id='data' src = "assets/img/noun_70892.svg"></a>Data</div>
-				<div class="list-item"><a href="http://blog.hubspot.com/marketing/best-website-designs-list" class="hvr-pulse" target="_blank"><img class = 'hobby-pic' id='websites' src = "assets/img/noun_38321.svg"></a>Web Design</div>
-				<div class="list-item"><a href="http://fivethirtyeight.com/" target="_blank" class="hvr-pulse"> <img class = 'hobby-pic' id='journalism' src = "assets/img/noun_18205.svg"></a>Journalism</div>
-				<div class="list-item"><a href="http://www.espetus.com/" target="_blank" class=" hvr-pulse"><img class = 'hobby-pic' id='food' src = "assets/img/noun_195363.svg"></a>Gourmet Food</div>
-	</div>
-	</div>
+			<!--	<div class="hobby-content">
+					<div class = "hobby" id= "sports">
+						<a href="http://espn.go.com/boston/" target="_blank" class = "hvr-pulse"><div class="text"> Sports </div></a>
+					</div>
+					<div class = "hobby" id='book'> 
+						<a href="http://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555" class=" hvr-pulse" target="_blank"><div class="text"> Reading </div></a>
+					</div>
+					<div class = "hobby" id='data'> 
+						<a href="https://github.com/caesar0301/awesome-public-datasets" class=" hvr-pulse" target="_blank"><div class="text"> Data </div></a>
+					</div>
+					<div class = "hobby" id='journalism'>
+						<a href="http://fivethirtyeight.com/" target="_blank" class="hvr-pulse"><div class="text"> Journalism </div></a> 
+					</div>
+					<div class = "hobby" id='web-design'> 
+						<a href="http://blog.hubspot.com/marketing/best-website-designs-list" class="hvr-pulse" target="_blank"><div class="text"> Web Design </div></a>
+					</div>
+					<div class = "hobby" id = "delicious-food"> 
+						<a href="http://www.espetus.com/" target="_blank" class=" hvr-pulse"><div class="text"> Delicious Food </div></a>
+					</div>
+-->
+				</div> 
+
+      
 </section>		
+
+
 
 <div class = 'footer' id="media"> 
 			<div class="contact-label" >Contact Me: </div>

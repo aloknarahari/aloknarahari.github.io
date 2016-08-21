@@ -1,0 +1,828 @@
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+margin: 0 auto;
+text-align: center;
+
+ 
+  background-size: 100% auto;
+color:white;
+
+}
+
+
+
+html {
+
+
+background:   
+linear-gradient(
+       rgba(0,0,0, 0.15), 
+      rgba(0,0,0, 0.15)),
+url(../img/galaxy1.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+   max-width: 100%; 
+    overflow-x: hidden;
+  
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+
+}
+
+
+
+.hamburg{
+	-webkit-animation-delay:7.5s;
+	animation-delay:5s;
+}
+
+
+#header {
+padding: 60px 5px 5px;
+font-size:300%;
+font-family: 'Roboto Slab', serif;
+font-weight: 500;
+letter-spacing: 20px;
+text-transform:uppercase;
+}
+
+#Layer_1{
+	margin-top:75px;
+	width:500px;
+}
+
+hr.style-four {
+    height: 2px;
+    border: 0;
+    background:white;
+    width:35%;
+    margin: 0 auto;
+    -webkit-animation-delay:3.5s;
+    animation-delay:3.5s;
+}
+
+/* Containers */
+
+.section{
+	width:100%;
+	height:600px;
+	position:relative;
+}
+
+#home-section{
+
+	height:700px;
+}
+
+#bio-section{
+
+	height:700px;
+	background:url(../img/soft.png);
+}
+
+#works-section{
+	background-height:700px;
+	background-width:100%;
+	background:
+linear-gradient(
+       rgba(0,0,0, 0.4), 
+      rgba(0,0,0, 0.4)),
+	url(../img/macbackground.png);
+	
+}
+
+#hobbies-section{
+background: url(../img/cream_pixels.png);
+height:800px;
+}
+
+/** Top Toolbar **/
+
+.button {
+    display: block;
+    width: 50px;
+    background: transparent;
+    border: 0 none;
+    outline: 0 none;
+    cursor: pointer;
+    position:fixed;
+    z-index: 200;
+    margin-left:20px;
+    margin-top:5px;
+}
+
+.button svg rect{
+	fill:#fff;
+	
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    background-color: #333;
+    justify-content: center;
+    position:fixed;
+    width:100%;
+    z-index: 100;
+    margin-top:-50px;
+    transition: all 0.2s ease;
+}
+
+li {
+ 
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+    color:white;
+
+}
+ul:hover{
+opacity:1
+}
+
+
+
+/* jQuery Manipulation Classes */
+
+.sidebar-active{
+	-webkit-transform: translateY(50px);
+	-moz-transform: translateY(50px);
+	-o-transform: translateY(50px);
+	transform:translateY(50px);
+	transition: all 0.2s ease;
+}
+
+
+#subheader {
+padding-bottom: 30px;
+font-style: italic;
+font-size: 20;
+font-weight: lighter;
+}
+
+.line{
+	 background: black;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1px;
+}
+
+.image {
+	height: 100%;
+ width: 100%;
+ object-fit: cover;
+border-radius: 50%;
+	border:5px solid white ;
+	-webkit-animation-delay:4.5s;
+	animation-delay:4.5s;
+	animation-duration:2.0s;
+
+}
+
+/** Intro **/
+
+.top-container{
+	width:85%;
+	margin: 130px 0px 10px 200px;
+	display:flex;
+	justify-content: center;
+
+
+}
+
+#description{
+
+	width:60%;
+text-align: justify;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom:50px;
+	line-height: 200%;
+	text-align: center;
+	font-size:17px;
+	
+}
+
+.entrance{
+	
+	animation-name:fade-up;
+animation-duration:3s;
+animation-delay:3s;
+}
+
+#intro{
+
+	text-align: center;
+	-webkit-animation-delay:5s;
+	animation-delay:4s;
+	animation-duration:2.5s;
+
+}
+
+
+#thumbnail {
+border-radius: 50%;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+transition: all 0.2s ease;
+margin-top: -30px;
+
+
+}
+
+
+#thumbnail:hover{
+	
+	transform: scale(1.05);
+	-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+transition-delay: .25s;
+}
+
+
+
+/** Bio Part **/ 
+
+.bio-container{
+	width:70%;
+	padding-top:200px;
+	margin: 0 auto;
+	display:flex;
+	flex-direction:wrap;
+	justify-content: space-between;
+	color:black;
+	
+}
+
+.bio{
+font-family: 'Roboto Slab', serif;
+font-size: 50px;
+color:black;
+padding:50px;
+}
+
+
+
+.bio-and-resume{
+
+	width:60%;
+	position:relative;
+	margin:auto;
+	height:200px;
+	-webkit-display:flex;
+	display:flex;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content: center;
+
+
+}
+
+.bio-descrip{
+	width:100%;
+	margin:auto;
+	margin:-200px;
+	text-align:left;
+	
+}
+
+
+.resume a{
+	display:block;
+	padding:15px;
+	font-size:125%;
+	letter-spacing:2px;
+	background:transparent;
+	color:#2196F3;
+	border:3px solid #2196F3;
+	transition: all 0.3s;
+}
+
+
+.resume{
+	margin-left:200px;
+	margin-right:200px;
+	margin-top:-10px;
+	transition: all 0.5s ease;
+	height:57px;
+}
+
+.resume a:hover{
+	letter-spacing:4px;
+	background-color: #2196F3;
+	color:white;
+	transition: all 0.3s;
+
+}
+
+
+a {
+
+text-decoration: none;
+}
+
+
+
+.bio-descrip a{
+	color:black;
+	font-weight:700;
+
+}
+.bio-descrip{
+	margin-bottom: 30px;
+}
+
+
+/** Works Area **/
+
+.works-container{
+	width:70%;
+	margin: auto;
+	position:relative;
+
+	display:flex;
+	justify-content: space-between;
+	
+}
+
+.works-title{
+	font-family: 'Roboto Slab', serif;	
+font-size:50px;
+line-height:250px;
+text-align:center;
+
+
+}
+
+
+
+.dc-articles{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: center;
+}
+
+
+.dc-articles h1{
+	flex:1 100%;
+
+}
+
+.all a{
+	display:block;
+	color:white;
+	background: rgba(255,255,255,0.1);
+	border: 3px solid white;	
+	padding:14px;
+	padding-left:52px;
+	padding-right:52px;
+}
+
+.all{
+
+
+}
+.hvr-bubble-float-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0s);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+}
+.favorites{
+
+width:40%;
+margin-bottom:20px;
+
+}
+
+}
+.hvr-hollow:hover, .hvr-hollow:focus, .hvr-hollow:active {
+  background: none;
+}
+
+.dropbtn {
+    background-color:rgba(255,255,255,0.1);
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left:20px;
+    border:3px solid white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right:0px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+.research{
+	margin-top:20px;
+}
+.research h1{
+	font-size:26;
+}
+
+.papers{
+
+	color:white;
+		background: rgba(255,255,255,0.1);
+	padding:14px 0px 14px 0px;
+	width:200px;
+	margin:auto;
+	border:3px solid white;
+
+}	
+
+.papers:hover{
+	font-size:0;
+}
+
+.papers:hover::after{
+	font-size: 16px;
+	content: attr(data-hover);
+}
+
+
+/** Hobbies **/
+
+.hobby-title{
+	font-family: 'Roboto Slab', serif;
+	color:black;
+	font-size:50px;
+	padding-top:50px;
+}
+
+.hobby-content{
+	width:70%;
+	height:400px;
+	margin:auto;
+	margin-top:100px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+
+
+}
+
+.hobby{
+	width:32%;
+	height:180px;
+	position:relative;
+	
+}
+
+#sports{
+background:url(../img/sports.jpg);
+	background-size:contain;
+	text-align: center;
+
+}
+
+#book{
+	background:url(../img/book.jpg);
+	background-size:contain;
+	text-align: center;
+}
+
+#data{
+	background:url(../img/data.jpg);
+	background-size:contain;
+	text-align: center;
+}
+
+#journalism{
+	background:url(../img/newspaper.jpg);
+	background-size:cover;
+	text-align: center;
+}
+
+#web-design{
+	background:url(../img/web-design.jpg);
+	background-size:cover;
+	}
+
+#delicious-food{
+	background:url(../img/food.jpeg);
+	background-size:cover;
+	text-align: center;
+}
+
+
+.text{
+width:100%;
+height:180px;
+background: rgba(0,0,0,0.6);
+color:white;
+font-size:26px;
+line-height:180px;
+vertical-align: middle;
+opacity: 0;
+}
+
+.hobby:hover .text{
+	opacity:1;
+}
+
+
+/**
+.hobbies-container {
+width:70%;
+height:30%;
+padding:100px;
+	margin: 0 auto;
+display:flex;
+
+justify-content: space-between;
+
+}
+
+.hobbies-title {
+	
+font-size: 300%;
+font-family: 'Roboto Slab', serif;
+width:250px;
+height:250px;
+border-radius:50%;
+line-height:250px;
+text-align:center;
+background: #039BE5;
+}
+
+.hobbies-content {
+	
+width:55%;
+height:15%;
+padding-top:150px;
+display:flex;
+flex-wrap:wrap;
+justify-content: space-around;
+align-content:center;
+color:black;
+
+}
+
+#link{
+
+    display: block;
+
+}
+
+.list-item {
+
+display:inline-block;
+width:200px;
+height:150px;
+font-size: 130%;
+
+}
+
+.list-item a{
+	display:block;
+	color:black;
+	
+}
+
+.hobby-pic{
+	width:75px;
+}
+
+
+
+#food{
+	margin-top:30px;
+}
+
+**/
+
+
+/** Bottom Toolbar **/
+
+.icon{
+	display: inline-block;
+	margin-right: 20px;
+	margin-left:20px;
+
+}
+
+
+
+.read{
+	margin-top: -10;
+}
+
+.footer{
+
+background:#01579B;
+}
+
+#media{
+	
+	margin-top: 200px;
+	display:flex;
+	width:100%;
+	height:65px;
+	margin:auto;
+	justify-content: center;
+	align-items: center;
+	}
+
+.contact-label{
+	
+font-family: 'Roboto Slab', serif;
+
+}
+
+#author{
+
+	font-size:50%;
+	position:bottom left;
+	margin-top:-20px;
+	text-align: left;
+	width:100%;
+	padding-left:10px;
+	padding-bottom:10px;
+
+}
+
+#linkedin{
+ margin-right: 20px;
+}
+#linkedin img{
+	width:30px;
+
+}
+#faceboook{
+margin-left: 20px;
+}
+
+#facebook img{
+	width:30px;
+
+}
+
+#mail img{
+	width:40px;
+}
+
+#media img:hover{
+	transform:scale(1.1);
+	
+}
+
+.down-arrow{
+	z-index: 999;
+	background:white;
+	width:50px;
+	height:50px;
+
+}
+
+#down-arrow{
+background:transparent;
+
+
+}
+
+.cls-1 {
+		fill-opacity:0;
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        animation-timing-function: ease-in-out, cubic-bezier(.61,.02,1, .06);
+        animation-fill-mode: forwards;
+        animation-name: dash, FillIn;
+        animation-duration: 5s, 2.5s;
+        animation-delay:0.5s;
+       
+    }
+
+@keyframes FillIn {
+  from { fill-opacity: 0; }
+  to { fill-opacity: 1; }
+}
+
+ @keyframes dash {
+        to {
+            stroke-dashoffset: 0;
+        }
+
+ @keyframes fade-up {
+ 	100% {
+ 		opacity: 1;
+ 	}
+ }
+
+
+/** Media Queries  **/ 
+
+@media (min-width: 1020px){
+	
+	.hobbies-content{
+		width:500px;
+		height:400px;
+		display:inline-block;
+		padding-top:10px;
+		margin-top:-50px;
+	}
+
+	#bio-section{
+		height:720px;
+	}
+
+	#thumbnail{
+		margin-top:0px;
+
+	}
+
+	.top-container{
+		width:90%;
+		margin-top:100px;
+		margin-left:100px;
+	
+	}
+	.bio-and.resume{
+		width:80%;
+	}
+}
+
+@media(min-width: 1300px){
+	#bio-section{
+		height:575px;
+	}
+}
+
+@media(min-width: 1400px){
+	#home-section{
+		height:900px;
+	}
+
+	.top-container{
+		margin-top:250px;
+	}
+}
+
+
+
+
+
+
+
+

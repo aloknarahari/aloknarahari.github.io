@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+$(document).ready(function(){
+  $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+    $(this).toggleClass('open');
+  });
+});
 
 
 $(".button").click(function(){
@@ -8,10 +13,43 @@ $(".button").click(function(){
         } else {
           $(".navigation").addClass("sidebar-active");
           $(".navigation").fadeIn(2000);
-          
-    
         }
   });
+
+
+
+
+//change color of hamburger icon
+$(function() {
+    var scrolldiv = $("#nav-icon3 span"); //the div you want 
+    // calculate heights of different sections
+    h1 = $('#home-section').height(); 
+    h2 = $('#home-section').height() + $('#bio-section').height();
+    h3 = $('#home-section').height() + $('#bio-section').height() + $('#works-section').height();
+
+//If-else statement for when to change color depending on height
+    $(window).scroll(function() {
+        if($(this).scrollTop() > h3 ) { 
+                $(scrolldiv).css('background', 'black'); 
+            }
+        else if ($(this).scrollTop() > h2)  {
+            $(scrolldiv).css('background', 'white'); 
+        }
+        else if($(this).scrollTop() > h1) {
+          $(scrolldiv).css('background' , 'black');
+        }
+        else {
+          $(scrolldiv).css('background', 'white'); 
+        }
+    })
+});
+
+
+$(function(){
+  if ($('.navigation').hasClass('sidebar-active')) {
+    $('#nav-icon3 span').css('background' , 'white');
+  }
+});
 
 
 $(".anchor").click(function(){
@@ -69,8 +107,7 @@ $('.expand').click(function(){
 })(window, document, jQuery);
 
 
-
-
+$('.text').attr('href' , 'http://www.google.com');
 
 
 
