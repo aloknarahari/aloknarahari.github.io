@@ -18,7 +18,7 @@ background:
 linear-gradient(
        rgba(0,0,0, 0.15), 
       rgba(0,0,0, 0.15)),
-url(../img/galaxy1.jpeg) no-repeat center center fixed; 
+url(../img/universe-stars-background-wallpaper-3.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -97,7 +97,7 @@ hr.style-four {
     
    /** background:#01579B; **/
 	
-background:url(../img/stardust_@2X.png); 
+
 
 /**
 	background:
@@ -217,13 +217,16 @@ height:1000px;
     margin: 0;
     padding: 0;
     display:flex;
-    background-color: #333;
+    background-color: #000D1C;
     justify-content:center;
     position:fixed;
     width:100%;
     z-index: 100;
     margin-top:-65px;
     transition: all 0.2s ease;
+    box-shadow: 0 8px 6px -6px black;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+
 }
 
 .nav-box {
@@ -240,7 +243,7 @@ height:1000px;
 }
 
 .nav-box a:hover {
-    background-color: #111;
+    background-color: #212121;
     color:white;
 
 }
@@ -522,6 +525,10 @@ figure:hover{
 	background: #ed4e6e;
 	color: #fff;
 	
+}
+
+#fav1:hover , #fav2:hover, #fav3:hover{
+	color:black;
 }
 
 #papers{
