@@ -36,13 +36,13 @@
 	color: #ed4e6e;
 }
 
-.grid figcaption h2 {
+.grid h2 {
 	margin-top: -10px;
 	padding: -10px;
 	color: #fff;
 }
 
-.grid figcaption h5 {
+.grid  h5 {
 	width:75%;
 }
 
