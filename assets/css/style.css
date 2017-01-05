@@ -2,10 +2,13 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-margin: 0 auto;
+margin: 0;
+bottom:0;
 text-align: center;
-  background-size: 100% auto;
 color:white;
+min-height:100%;
+display:flex;
+flex-direction:column;
 
 }
 
@@ -13,7 +16,7 @@ color:white;
 
 html {
 
-
+height:100%;
 background:   
 linear-gradient(
        rgba(0,0,0, 0.15), 
@@ -35,18 +38,6 @@ url(../img/universe-stars-background-wallpaper-3.jpg) no-repeat center center fi
 
 
 
-.hamburg{
-
-/**
-	-webkit-animation-delay:7.5s;
-	animation-delay:5s;
-	fill: black;
-	**/
-}
-
-
-
-
 #header {
 padding: 60px 5px 5px;
 font-size:300%;
@@ -58,7 +49,8 @@ text-transform:uppercase;
 
 #Layer_1{
 	margin-top:75px;
-	width:500px;
+	width:35%;
+	color:black;
 }
 
 hr.style-four {
@@ -75,25 +67,27 @@ hr.style-four {
 
 .section{
 	width:100%;
-	height:600px;
+	flex:1;
+	padding: 20px;
+
 	
 }
 
 #home-section{
 
-	height:700px;
+	
 }
 
 #bio-section{
 
-	height:800px;
+	margin:0 auto;
 	background-color:#FEFBF7;
 	/**background:url(../img/soft.png); **/
 }
 
 #works-section{
-	height:1500px;
 	background-width:100%;
+	background-color: #F4F4F4;
     
    /** background:#01579B; **/
 	
@@ -111,7 +105,7 @@ linear-gradient(
 #hobbies-section{
 	background-color: #FEFBF7;
 /**background: url(../img/cream_pixels.png); **/
-height:1000px;
+
 }
 
 /** Top Toolbar **/
@@ -210,41 +204,68 @@ height:1000px;
 	
 }
 
+.navigation{
+	position:fixed;
+	list-style-type: none;
+    height:60px;
+    margin: 0;
+    padding: 0;
+    background-color:#FEFBF7;
+    display:flex;
+    justify-content:center;
+ 	z-index: 100;
+    width:100%;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid #BDBDBD;
+}
 
-.navigation {
+
+
+
+.navigation-home {
+	position:fixed;
     list-style-type: none;
-    height:45px;
+    height:60px;
     margin: 0;
     padding: 0;
     display:flex;
-    background-color: #000D1C;
+    background-color: #001129;
     justify-content:center;
     position:fixed;
     width:100%;
-    z-index: 100;
-    margin-top:-65px;
+    z-index: 100;x
     transition: all 0.2s ease;
-    box-shadow: 0 8px 6px -6px black;
     border-bottom: 1px solid rgba(255,255,255,0.5);
 
 }
 
-.nav-box {
+#bio{
 
+}
+
+.nav-box {
  
 }
 
-.nav-box a {
+.nav-box-home a {
     display: block;
     color: white;
     text-align: center;
-    padding: 12px 12px;
+    padding:0;
+    text-decoration: none;
+    margin:20px;
+}
+
+.nav-box a{
+	display: block;
+    color: black;
+    text-align: center;
+    padding:0;
+    margin:20px;
     text-decoration: none;
 }
 
-.nav-box a:hover {
-    background-color: #212121;
-    color:white;
+
 
 }
 .navigation:hover{
@@ -278,39 +299,29 @@ font-weight: lighter;
   padding: 1px;
 }
 
-.image {
-	height: 100%;
- width: 100%;
- object-fit: cover;
-border-radius: 50%;
-	border:5px solid white ;
-	-webkit-animation-delay:3.5s;
-	animation-delay:3.5s;
-	animation-duration:2.0s;
 
-}
 
 /** Intro **/
 
 .top-container{
+	
+	margin:auto;
 	width:85%;
-	margin: 130px 0px 10px 200px;
 	display:flex;
-	justify-content: center;
-
-
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex-direction:row;
+	margin-top:10%;
 }
+
 
 #description{
 
-	width:60%;
-text-align: justify;
-	margin-left: 150px;
-	margin-right: 150px;
-	margin-bottom:50px;
+	width:50%;
+    text-align: justify;
 	line-height: 200%;
 	text-align: center;
-	font-size:17px;
+	font-size:17;
 	
 }
 
@@ -327,12 +338,22 @@ text-align: justify;
 
 
 #thumbnail {
-border-radius: 50%;
+
 -webkit-filter: grayscale(100%);
 filter: grayscale(100%);
 transition: all 0.2s ease;
-margin-top: -30px;
+margin-top:-10px;
 
+}
+
+.image {
+
+ 	width:80%;
+	border-radius: 50%;
+	border:5px solid white ;
+	-webkit-animation-delay:3.5s;
+	animation-delay:3.5s;
+	animation-duration:2.0s;
 
 }
 
@@ -368,7 +389,8 @@ transition-delay: .25s;
 font-family: 'Roboto Slab', serif;
 font-size: 50px;
 color:black;
-padding:50px;
+margin-top:100px;
+
 }
 
 
@@ -413,6 +435,11 @@ text-decoration: none;
 	font-weight:700;
 
 }
+
+.bio-descrip a:hover{
+	text-decoration:underline;
+
+}
 .bio-descrip{
 	margin-bottom: 30px;
 	position:relative;
@@ -421,11 +448,9 @@ text-decoration: none;
 
 /** Works Area **/
 
-.works-background{
-	width:80%;
-	margin:auto;
-	background:#E0E0E0;
-	height:1000px;
+.works-section{
+	background:#F4F4F4;
+	
 }
 
 .works-container{
@@ -439,29 +464,27 @@ text-decoration: none;
 }
 
 .works-title{
-	font-family: 'Roboto Slab', serif;	
+font-family: 'Roboto Slab', serif;	
 font-size:50px;
 line-height:250px;
 text-align:center;
 color:white;
-
 
 }
 
 /** Works Section **/
 
 .papers{
-	
-	margin:auto;
-	width:70%;
-	font-size:32px;
+	font-family:'Roboto Slab', serif;	 
+	margin:60px;
+	font-size:200%;
 	color:black;
-	text-align: left;
-	margin-left:50px;
+	text-align: center;
 }
 
 .imghvr-fade h5{
-	margin-top:20px;
+	margin-top:10px;
+	margin-right:0;
 }
 
 .imghvr-fade a{
@@ -480,6 +503,8 @@ color:white;
 	
 }
 
+
+
 figure:hover{
 	transition: .2s ease-in-out;
 	box-shadow: 0px 0px 35px #888888;
@@ -490,6 +515,10 @@ figure:hover{
 	transition: .1s ease-in-out;
 	box-shadow: 10px 10px 5px #888888;
 	transform:scale(1.05);
+}
+
+.favs{
+
 }
 
 #fav1{
@@ -531,9 +560,7 @@ figure:hover{
 	color:black;
 }
 
-#papers{
-	margin-bottom: 0px;
-}
+
 
 #articles{
 	margin-top:-100px;
@@ -557,6 +584,7 @@ figure:hover{
 	margin-top:20px;
 	padding-bottom:10px;
 	transition: .5s ease-in-out;
+	margin-bottom: 20px;
 }
 
 .project:hover{
@@ -592,25 +620,27 @@ figure:hover{
 .hobby-title{
 	font-family: 'Roboto Slab', serif;
 	color:black;
-	font-size:50px;
-	padding-top:50px;
+	font-size:40px;
+	margin-top:90px;
 }
 
 .hobby-content{
-	width:70%;
-	height:400px;
+	width:80%;
+	height:40%;
 	margin:auto;
 	margin-top:100px;
 	display:flex;
+	flex-direction: row;
 	flex-wrap:wrap;
 	justify-content:space-around;
+	color:black;
 
 
 }
 
 .hobby{
 	width:32%;
-	height:180px;
+	height:75%;
 	position:relative;
 	
 }
@@ -623,46 +653,64 @@ figure:hover{
 
 }
 
+/** Old Hobbies Container **/
+
 #sports{
-background:url(../img/sports.jpg);
-	background-size:contain;
-	text-align: center;
+
 
 }
 
 #book{
-	background:url(../img/book.jpg);
-	background-size:contain;
-	text-align: center;
+	
 }
 
 #data{
-	background:url(../img/data.jpg);
-	background-size:contain;
-	text-align: center;
+	
 }
 
 #journalism{
-	background:url(../img/newspaper.jpg);
-	background-size:cover;
-	text-align: center;
+
 }
 
 #web-design{
-	background:url(../img/web-design.jpg);
-	background-size:cover;
+	
 	}
 
 #delicious-food{
-	background:url(../img/steak.jpg);
-	background-size:cover;
-	text-align: center;
+	
 }
 
 .food{
 	background-size:cover;
 }
 
+.hobby-content img{
+	width:100px;
+	height:100px;
+}
+
+.hobby-content h3{
+
+}
+
+
+
+
+.hline{
+	display:block;
+	width:50px;
+	height:1px;
+	opacity:1;
+	background:black;
+	align-content: center;
+	margin:10px auto;
+
+}
+
+.hobby-content hr{
+	color:black;
+	width:100%;
+}
 
 .text{
 width:100%;
@@ -675,9 +723,6 @@ vertical-align: middle;
 opacity: 0;
 }
 
-.hobby:hover .text{
-	opacity:1;
-}
 
 #test-section{
 	background:white;
@@ -687,40 +732,8 @@ opacity: 0;
 
 }
 
-/**
-.hobbies-container {
-width:70%;
-height:30%;
-padding:100px;
-	margin: 0 auto;
-display:flex;
 
-justify-content: space-between;
 
-}
-
-.hobbies-title {
-	
-font-size: 300%;
-font-family: 'Roboto Slab', serif;
-width:250px;
-height:250px;
-border-radius:50%;
-line-height:250px;
-text-align:center;
-background: #039BE5;
-}
-
-.hobbies-content {
-	
-width:55%;
-height:15%;
-padding-top:150px;
-display:flex;
-flex-wrap:wrap;
-justify-content: space-around;
-align-content:center;
-color:black;
 
 }
 
@@ -755,7 +768,6 @@ font-size: 130%;
 	margin-top:30px;
 }
 
-**/
 
 
 /** Bottom Toolbar **/
@@ -775,16 +787,23 @@ font-size: 130%;
 
 .footer{
 
-background:#01579B;
+background:#313131;
+margin-top:auto;
+
+}
+
+.footer-home{
+	
+
+	
 }
 
 #media{
 	
-	margin-top: 200px;
 	display:flex;
 	width:100%;
 	height:65px;
-	margin:auto;
+
 	justify-content: center;
 	align-items: center;
 	}
@@ -832,19 +851,6 @@ margin-left: 20px;
 	
 }
 
-.down-arrow{
-	z-index: 999;
-	background:white;
-	width:50px;
-	height:50px;
-
-}
-
-#down-arrow{
-background:transparent;
-
-
-}
 
 .cls-1 {
 		fill-opacity:0;
@@ -856,7 +862,193 @@ background:transparent;
         animation-duration: 3.5s, 2s;
         animation-delay:0.5s;
        
-    }
+}
+
+
+
+/** Media Queries  **/ 
+
+
+/** FOR HOME PAGE **/
+@media screen and (max-width: 480px) {
+	#Layer_1{
+		width:85%;
+	}
+	.top-container{
+		width:100%;
+	}
+	hr.style-four{
+		width:75%;
+	}
+
+	#description{
+		font-size:1em;
+		width:100%;
+		line-height: 1.5;
+		
+	}
+
+	#intro{
+		text-align: left;
+		width:100%;
+	}
+
+	.image{
+		width:50%;
+	}
+
+	.nav-box-home a{
+		margin:10px;
+		margin-top:20px;
+	}
+	
+}
+
+@media screen and (min-width: 800px) {
+#home-section{
+	position:fixed;
+	
+}
+.footer-home{
+	position:fixed;
+	bottom:0;
+}
+}
+
+/** FOR BIO PAGE **/
+@media screen and (min-width: 300px) {
+	.bio{
+		font-size: 40px;
+	}
+	.bio-container{
+		width:99%;
+	}
+	.bio-descrip{
+		width:100%;
+	}
+	#media{
+		height:100px
+	}
+	.navigation a{
+		margin:20px 10px;
+	}
+}
+
+@media screen and (min-width: 800px){
+	.bio-container{
+		width:60%;
+	}
+}
+@media screen and (min-width:1000px) {
+	.bio-container{
+		width:70%;
+	}
+	.bio-descrip{
+		width:80%;
+	}
+	.navigation a{
+		margin:20px;
+	}
+}
+
+@media screen and (min-width:1200px){
+	.bio-container{
+		width:55%;
+	}
+	.bio-descrip{
+		font-size:16px;
+	}
+	.bio{
+		font-size:50px;
+		})
+}
+
+
+/* WORKS PAGE */ 
+@media screen and (max-width: 500px){
+
+.grid figcaption h5{
+width:100%;
+}
+
+}
+
+@media screen and (max-width:350px){
+	.papers{
+		font-size: 25px;
+	}
+
+	.grid figure img{
+		height:200px;
+		width:250px;
+
+	}
+
+	.grid li{
+		width:200px;
+		padding:0;
+	}
+
+	.grid figcaption h2{
+		font-size:1em;
+	}
+
+	.grid{
+		padding:10;
+		width:100%;
+	}
+	.extra{
+		display:none;
+	}
+	.favs{
+		display:flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		width:30%;
+	}
+
+
+}
+/* INTERESTS */
+
+@media screen and (max-width: 901px) {
+	.hex-container{
+		display:none;
+	}
+	.hobby{
+		padding:30px;
+	}
+	.hobby-content{
+		margin-top:20px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.hobby-content{
+		display:none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.hobby{
+		width:50%;
+		padding-bottom:50px;
+
+	}
+	.hobby-content{
+		width:100%;
+	}
+	.hobby-content p{
+		width:100%;
+	}
+}
+@media screen and (max-width: 370px){
+	.hobby{
+		width:75%;
+		padding-bottom:25px;
+	}
+}
+
 
 @keyframes FillIn {
   from { fill-opacity: 0; }
@@ -867,6 +1059,7 @@ background:transparent;
         to {
             stroke-dashoffset: 0;
         }
+ }
 
  @keyframes fade-up {
  	100% {
@@ -874,54 +1067,6 @@ background:transparent;
  	}
  }
 
-
-/** Media Queries  **/ 
-
-@media (min-width: 1020px){
-	
-	.hobbies-content{
-		width:500px;
-		height:400px;
-		display:inline-block;
-		padding-top:10px;
-		margin-top:-50px;
-	}
-
-	#bio-section{
-		height:720px;
-	}
-
-	#thumbnail{
-		margin-top:0px;
-
-	}
-
-	.top-container{
-		width:90%;
-		margin-top:100px;
-		margin-left:100px;
-	
-	}
-	.bio-and.resume{
-		width:80%;
-	}
-}
-
-@media(min-width: 1300px){
-	#bio-section{
-		height:575px;
-	}
-}
-
-@media(min-width: 1400px){
-	#home-section{
-		height:900px;
-	}
-
-	.top-container{
-		margin-top:250px;
-	}
-}
 
 
 

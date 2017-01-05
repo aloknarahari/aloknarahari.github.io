@@ -17,7 +17,25 @@ $(".button").click(function(){
   });
 
 
+/*
+$(function() {
+  var scrolldiv = $(".navigation");
+  var margindiv = $('.nav-box a');
+  var nav = $('.navigation-fixed');
 
+$(window).scroll(function(){
+  if($(this).scrollTop() > 60) {
+      $(nav).addClass('.navigation-active')
+      $(margindiv).css('margin' , '10px');
+  } else if($(this).scrollTop() < 30) {
+      $(scrolldiv).css('height' , '60px')
+      $(margindiv).css('margin' , '20px');
+  }
+
+})
+
+});
+*/
 
 //change color of hamburger icon
 $(function() {

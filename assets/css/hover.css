@@ -2465,8 +2465,8 @@
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: #2098d1;
-  height: 4px;
+  background: black;
+  height: 2px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
   -webkit-transition-duration: 0.3s;
