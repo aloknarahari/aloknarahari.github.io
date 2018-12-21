@@ -1,7 +1,7 @@
 
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto Slab', sans-serif;
 margin: 0;
 bottom:0;
 text-align: center;
@@ -13,6 +13,20 @@ flex-direction:column;
 }
 
 
+
+html {
+background-color:#FAFAFA;
+/*
+height:100%;
+background:   
+linear-gradient(
+       rgba(0,0,0, 0.15), 
+      rgba(0,0,0, 0.15)),
+url(../img/cork-wallet.png); 
+  */
+  
+}
+/*
 
 html {
 
@@ -30,6 +44,7 @@ url(../img/universe-stars-background-wallpaper-3.jpg) no-repeat center center fi
     overflow-x: hidden;
   
 }
+*/
 
 ::-webkit-scrollbar { 
     display: none; 
@@ -53,11 +68,12 @@ text-transform:uppercase;
 	color:black;
 }
 
+
 hr.style-four {
     height: 2px;
     border: 0;
-    background:white;
-    width:35%;
+    background:black;
+    width:0%;
     margin: 0 auto;
     -webkit-animation-delay:3s;
     animation-delay:3s;
@@ -87,7 +103,7 @@ hr.style-four {
 
 #works-section{
 	background-width:100%;
-	background-color: #F4F4F4;
+	background-color: #FEFBF7;
     
    /** background:#01579B; **/
 	
@@ -229,18 +245,18 @@ linear-gradient(
     margin: 0;
     padding: 0;
     display:flex;
-    background-color: #001129;
+    background-color: #FAFAFA;
     justify-content:center;
     position:fixed;
     width:100%;
     z-index: 100;x
     transition: all 0.2s ease;
-    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid black;
 
 }
 
 .navigation-home .hvr-underline-from-center:before{
-	background:white;
+	background:black;
 }
 
 #bio{
@@ -253,7 +269,7 @@ linear-gradient(
 
 .nav-box-home a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding:0;
     text-decoration: none;
@@ -278,32 +294,6 @@ opacity:1
 
 
 
-/* jQuery Manipulation Classes */
-
-.sidebar-active{
-	-webkit-transform: translateY(65px);
-	-moz-transform: translateY(65px);
-	-o-transform: translateY(65px);
-	transform:translateY(65px);
-	transition: all 0.2s ease;
-}
-
-
-#subheader {
-padding-bottom: 30px;
-font-style: italic;
-font-size: 20;
-font-weight: lighter;
-}
-
-.line{
-	 background: black;
-  width: 50%;
-  margin: 0 auto;
-  padding: 1px;
-}
-
-
 
 /** Intro **/
 
@@ -311,32 +301,36 @@ font-weight: lighter;
 	
 	margin:auto;
 	width:85%;
+
+	
 	display:flex;
-	justify-content: space-around;
+	justify-content: center;
 	flex-wrap: wrap;
 	flex-direction:row;
-	margin-top:10%;
+	margin-top:5%;
+	
 }
 
 
 #description{
 
-	width:50%;
+	width:100%;
+	margin-top:2%;
     text-align: justify;
 	line-height: 200%;
 	text-align: center;
 	font-size:17;
+	color:black;
 	
 }
-
 
 
 #intro{
 
 	text-align: center;
 	-webkit-animation-delay:3.5s;
-	animation-delay:3.5s;
-	animation-duration:2.5s;
+	animation-delay:0.5s;
+	animation-duration:1.5s;
 
 }
 
@@ -352,12 +346,10 @@ margin-top:-10px;
 
 .image {
 
- 	width:80%;
+ 	width:60%;
 	border-radius: 50%;
-	border:5px solid white ;
-	-webkit-animation-delay:3.5s;
-	animation-delay:3.5s;
-	animation-duration:2.0s;
+	animation-delay: 0.5s;
+	animation-duration:1.0s;
 
 }
 
@@ -453,7 +445,7 @@ text-decoration: none;
 /** Works Area **/
 
 .works-section{
-	background:#F4F4F4;
+	background:#FEFBF7;
 	
 }
 
@@ -687,6 +679,10 @@ figure:hover{
 	height:60%;
 	margin:auto;
 
+
+}
+.hex-container p{
+	font-size: .75em;
 }
 
 /** Old Hobbies Container **/
@@ -823,8 +819,9 @@ font-size: 130%;
 
 .footer{
 
-background:#313131;
+
 margin-top:auto;
+background-color:#FEFBF7;
 
 }
 
@@ -859,6 +856,7 @@ font-family: 'Roboto Slab', serif;
 	width:100%;
 	padding-left:10px;
 	padding-bottom:10px;
+	color:black;
 
 }
 
@@ -895,8 +893,8 @@ margin-left: 20px;
         animation-timing-function: ease-in-out, cubic-bezier(.61,.02,1, .06);
         animation-fill-mode: forwards;
         animation-name: dash, FillIn;
-        animation-duration: 3.5s, 2s;
-        animation-delay:0.5s;
+        animation-duration: 1.5s, 1s;
+       
        
 }
 
@@ -925,7 +923,7 @@ margin-left: 20px;
 	}
 
 	#intro{
-		text-align: left;
+		
 		width:100%;
 	}
 
@@ -937,6 +935,10 @@ margin-left: 20px;
 		margin:10px;
 		margin-top:20px;
 	}
+	.footer-home{
+	position:fixed;
+	bottom:0;
+}
 	
 }
 
